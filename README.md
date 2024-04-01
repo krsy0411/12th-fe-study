@@ -2,7 +2,7 @@
 *12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간*
 
 ## 운영진
-|[김보성](https://github.com/NangManBo)|[서동섭](https://github.com/jihukimme)|[김현민](https://github.com/baekggum)|[김민주](https://github.com/minzzn)|[이시영](https://github.com/krsy0411)| [박준수](https://github.com/Parkjunsu123)|
+|[김보성](https://github.com/NangManBo)|[서동섭](https://github.com/dongsubnambuk)|[김현민](https://github.com/baekggum)|[김민주](https://github.com/minzzn)|[이시영](https://github.com/krsy0411)| [박준수](https://github.com/Parkjunsu123)|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |<img src="https://avatars.githubusercontent.com/u/124684536?v=4" alt="FE_KimBoSung" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/105368619?v=4" alt="FE_SeoDongSub" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/49273517?v=4" alt="FE_KimHyunMin" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/97500865?v=4" alt="FE_KimMinJu" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/90031820?v=4" alt="FE_LeeSiYoung" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/75600138?v=4" alt="FE_ParkJunSu" width="100" height="100"/>|
 
