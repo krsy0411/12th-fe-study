@@ -1,12 +1,12 @@
 # 12th-FE-Study
-> 12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간
+*12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간*
 
 ## 운영진
 |[김보성](https://github.com/NangManBo)|[서동섭](https://github.com/jihukimme)|[김현민](https://github.com/baekggum)|[김민주](https://github.com/minzzn)|[이시영](https://github.com/krsy0411)| [박준수](https://github.com/Parkjunsu123)|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |<img src="https://avatars.githubusercontent.com/u/124684536?v=4" alt="FE_KimBoSung" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/105368619?v=4" alt="FE_SeoDongSub" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/49273517?v=4" alt="FE_KimHyunMin" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/97500865?v=4" alt="FE_KimMinJu" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/90031820?v=4" alt="FE_LeeSiYoung" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/75600138?v=4" alt="FE_ParkJunSu" width="100" height="100"/>|
 
-### 일정표
+## 일정표
 > 해당 일정은 약간씩 조정될 수 있습니다.     
 > 조정될때마다 바로바로 수정하겠습니다.      
 
@@ -23,7 +23,7 @@
 |[9주차] 5/27  | **김현민** | [Library] 이론 및 실습     |
 |[10주차] 7/1  | **김민주** | [Library] 이론 및 실습     |
 |[11주차] 7/8 | **이시영** |  [Clone] 클론코딩           |
-|[12주차] 7/15 | **이시영** | [Clone] 클론코딩           |
+|[12주차] 7/15 | **김현민** | [Clone] 클론코딩           |
 
 ### 아기시자 규칙
 1. **교육시간에 최대한 맞춰 진행할 예정입니다. 약간의 오차는 이해해주시면 감사하겠습니다.**
@@ -46,6 +46,6 @@
 2. 자료 퀄리티에 너무 고민하지마시고, 만들었다에 의의를 두고 진행해주세요(물론 너무 대충은 안되지만)
     * 만약 자료를 못 만드셨다고 하면, 즉흥적으로 진행하겠습니다(이시영 담당).
 3. 자료 업로드
-   * 메인 브랜치에 주제_제목 형태로 올려주세요
-   * * EX) HTML_실습
-   * * EX) CSS_Layout
+   * 메인 브랜치에 주차_주제_제목 형태로 올려주세요
+   * * EX) 2주차_HTML_실습
+   * * EX) 4주차_CSS_Layout
