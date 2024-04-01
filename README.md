@@ -1,5 +1,10 @@
 # 12th-FE-Study
-> 12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간    
+> 12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간
+
+## 운영진
+|[김보성](https://github.com/NangManBo)|[서동섭](https://github.com/jihukimme)|[김현민](https://github.com/baekggum)|[김민주](https://github.com/minzzn)|[이시영](https://github.com/krsy0411)| [박준수](https://github.com/Parkjunsu123)|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|<img src="https://avatars.githubusercontent.com/u/124684536?v=4" alt="FE_KimBoSung" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/105368619?v=4" alt="FE_SeoDongSub" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/49273517?v=4" alt="FE_KimHyunMin" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/97500865?v=4" alt="FE_KimMinJu" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/90031820?v=4" alt="FE_LeeSiYoung" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/75600138?v=4" alt="FE_ParkJunSu" width="100" height="100"/>|
 
 ### 일정표
 > 해당 일정은 약간씩 조정될 수 있습니다.     
@@ -9,16 +14,16 @@
 |:------------|:---------|:----------------------- |
 |[1주차] 3/25   | **이시영** | [Git, HTML] 이론 및 실습   |
 |[2주차] 4/1   | **박준수** | [HTML] 심화 실습          |
-|[3주차] 4/15  | **이시영** | [CSS] 이론 및 실습         |
-|[4주차] 4/22  | **박준수** | [CSS] 심화 실습           |
-|[5주차] 4/29  | **서동섭** | [JavaScript] 이론 및 실습  |
-|[6주차] 5/7(화요일) | **김민주** | [JavaScript] 이론 및 실습  |
-|[7주차] 5/13  | **김보성** | [ReactJS] 이론 및 실습     |
-|[8주차] 5/20  | **서동섭** | [ReactJS] 이론 및 실습     |
+|[3주차] 4/8  | **이시영** | [CSS] 이론 및 실습         |
+|[4주차] 5/13  | **박준수** | [CSS] 심화 실습           |
+|[5주차] 5/20  | **서동섭** | [JavaScript] 이론 및 실습  |
+|[6주차] 5/27 | **김민주** | [JavaScript] 이론 및 실습  |
+|[7주차] 6/3  | **김보성** | [ReactJS] 이론 및 실습     |
+|[8주차] 6/10  | **서동섭** | [ReactJS] 이론 및 실습     |
 |[9주차] 5/27  | **김현민** | [Library] 이론 및 실습     |
-|[10주차] 6/3  | **김민주** | [Library] 이론 및 실습     |
-|[11주차] 6/10 | 미정       | 미정                     |
-|[12주차] 6/17 | 미정       | 미정                     |
+|[10주차] 7/1  | **김민주** | [Library] 이론 및 실습     |
+|[11주차] 7/8 | **이시영** |  [Clone] 클론코딩           |
+|[12주차] 7/15 | **이시영** | [Clone] 클론코딩           |
 
 ### 아기시자 규칙
 1. **교육시간에 최대한 맞춰 진행할 예정입니다. 약간의 오차는 이해해주시면 감사하겠습니다.**
@@ -36,10 +41,11 @@
     * 자신이 어려워하는건 다들 어려워하는 내용입니다. 못 따라온다고 욕하는 사람이 없으니 그냥 바로바로 자신의 난처함을 얘기해주세요
 
 ### 운영진 규칙
-1. 자신이 교육할때 사용할 파일(PowerPoint, PDF, Markdown... etc)를 branch를 쪼개어 해당 분기에 업로드합니다.
-    * Branch name : 1st, 2nd, 3rd, 4th, 와 같이 자신이 맡은 주차의 숫자를 넣어 만들어주시면 됩니다.
-    * 웬만하면 아기사자가 복붙이 가능하게끔 파일을 생성해주세요
-2. 교육 시간
+1. 교육 시간
     * 매주 월요일 18시~20시
-3. 자료 퀄리티에 너무 고민하지마시고, 만들었다에 의의를 두고 진행해주세요(물론 너무 대충은 안되지만)
+2. 자료 퀄리티에 너무 고민하지마시고, 만들었다에 의의를 두고 진행해주세요(물론 너무 대충은 안되지만)
     * 만약 자료를 못 만드셨다고 하면, 즉흥적으로 진행하겠습니다(이시영 담당).
+3. 자료 업로드
+   * 메인 브랜치에 주제_제목 형태로 올려주세요
+   * * EX) HTML_실습
+   * * EX) CSS_Layout
