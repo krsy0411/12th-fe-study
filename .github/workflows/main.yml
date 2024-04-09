@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@1.0.0
     - name: Create pull request
       uses: thomaseizinger/create-pull-request@master
-      with:
+      env:
         GITHUB_TOKEN: ${{ secrets.LikeLion_Create_Pull_Request }}
         head: ${{ github.ref }}
         base: main
