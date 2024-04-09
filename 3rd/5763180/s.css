@@ -1,0 +1,26 @@
+[hw1]
+{
+    border: 3px solid black
+}
+div[w] {
+    width: 100%;
+    height: 50px;
+}
+.font
+{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+[hw2]
+{
+    border: 3px solid blue
+}
+ol{
+list-style-type: none;
+}
+[hw3]
+{
+    border: 3px solid orange
+}
