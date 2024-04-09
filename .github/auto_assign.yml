@@ -1,0 +1,19 @@
+# auto-assign.yml
+  
+# Set to true to add reviewers to pull requests
+addReviewers: true/false
+
+# Set to true to add assignees to pull requests
+addAssignees: true/false/author
+
+# A list of reviewers to be added to pull requests (GitHub user name)
+reviewers:
+  - baekggum
+  - dongsubnambuk
+  - minzzn
+  - NangManBo
+  - Parkjunsu123
+
+# A number of reviewers added to the pull request
+# Set 0 to add all the reviewers (default: 0)
+numberOfReviewers: 1
