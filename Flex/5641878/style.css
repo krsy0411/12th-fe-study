@@ -1,0 +1,42 @@
+.item {
+    border: 1px solid rgb(255, 174, 69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 70px;
+}
+
+.Items:not(.noFlex) {
+    display: flex;
+}
+
+.noFlex {
+    border: 1px solid black;
+}
+
+.noAlign {
+    border: 1px solid black;
+}
+.spaceBetween {
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.center {
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.spaceEvenly {
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.column {
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.text {
+    margin: 0;
+}
