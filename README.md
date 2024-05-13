@@ -4,9 +4,9 @@ _12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간_
 
 ## 운영진
 
-|                                      [김보성](https://github.com/NangManBo)                                      |                                    [서동섭](https://github.com/dongsubnambuk)                                     |                                      [김현민](https://github.com/baekggum)                                       |                                      [김민주](https://github.com/minzzn)                                       |                                      [이시영](https://github.com/krsy0411)                                       |                                    [박준수](https://github.com/Parkjunsu123)                                    |
-| :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
-| `<img src="https://avatars.githubusercontent.com/u/124684536?v=4" alt="FE_KimBoSung" width="100" height="100"/>` | `<img src="https://avatars.githubusercontent.com/u/105368619?v=4" alt="FE_SeoDongSub" width="100" height="100"/>` | `<img src="https://avatars.githubusercontent.com/u/49273517?v=4" alt="FE_KimHyunMin" width="100" height="100"/>` | `<img src="https://avatars.githubusercontent.com/u/97500865?v=4" alt="FE_KimMinJu" width="100" height="100"/>` | `<img src="https://avatars.githubusercontent.com/u/90031820?v=4" alt="FE_LeeSiYoung" width="100" height="100"/>` | `<img src="https://avatars.githubusercontent.com/u/75600138?v=4" alt="FE_ParkJunSu" width="100" height="100"/>` |
+|                                     [김보성](https://github.com/NangManBo)                                     |                                   [서동섭](https://github.com/dongsubnambuk)                                    |                                     [김현민](https://github.com/baekggum)                                      |                                     [김민주](https://github.com/minzzn)                                      |                                     [이시영](https://github.com/krsy0411)                                      |                                   [박준수](https://github.com/Parkjunsu123)                                   |
+| :------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/124684536?v=4" alt="FE_KimBoSung" width="100" height="100"/> | <img src="https://avatars.githubusercontent.com/u/105368619?v=4" alt="FE_SeoDongSub" width="100" height="100"/> | <img src="https://avatars.githubusercontent.com/u/49273517?v=4" alt="FE_KimHyunMin" width="100" height="100"/> | <img src="https://avatars.githubusercontent.com/u/97500865?v=4" alt="FE_KimMinJu" width="100" height="100"/> | <img src="https://avatars.githubusercontent.com/u/90031820?v=4" alt="FE_LeeSiYoung" width="100" height="100"/> | <img src="https://avatars.githubusercontent.com/u/75600138?v=4" alt="FE_ParkJunSu" width="100" height="100"/> |
 
 ## 일정표
 
@@ -18,7 +18,7 @@ _12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간_
 | [1주차] 3/25  | **김민주** | [Git, HTML] 이론 및 실습  |
 | [2주차] 4/1   | **박준수** | [HTML] 심화 실습          |
 | [3주차] 4/8   | **이시영** | [CSS] 이론 및 실습        |
-| [4주차] 5/13  | 김현민     | [CSS] 이론 및 실습        |
+| [4주차] 5/13  | **김현민** | [CSS] 이론 및 실습        |
 | [5주차] 5/20  | **서동섭** | [JavaScript] 이론 및 실습 |
 | [6주차] 5/27  | **김민주** | [JavaScript] 이론 및 실습 |
 | [7주차] 6/3   | **김보성** | [ReactJS] 이론 및 실습    |
@@ -52,5 +52,5 @@ _12기 계명대학교 프론트엔드 운영진의 교육 내용 정리 공간_
    - 만약 자료를 못 만드셨다고 하면, 즉흥적으로 진행하겠습니다(이시영 담당).
 3. 자료 업로드
    - 메인 브랜치에 주차*주제*제목 형태로 올려주세요
-   - - EX) 2주차*HTML*실습
+   - - EX) 2주차\_HTML\_실습
    - - EX) 4주차\_CSS_Layout
