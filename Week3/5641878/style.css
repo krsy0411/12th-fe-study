@@ -1,0 +1,23 @@
+.firstDiv {
+    border: 3px solid black;
+    font-size: 25px;
+}
+
+.secondDiv {
+    border: 3px solid blue;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.lastDiv {
+    border: 3px solid orange;
+}
+
+.blackDiv {
+    width: 100%;
+    height: 50px;
+}
+
+.noMarkerList {
+    list-style-type: none;
+}

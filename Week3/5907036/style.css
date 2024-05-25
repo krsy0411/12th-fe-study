@@ -1,0 +1,24 @@
+.noMark{
+    list-style-type: none;
+}
+
+#fisrt {
+    border: 3px black solid;
+}
+
+#second {
+    border: 3px blue solid;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#third {
+    border:3px orange solid;
+}
+
+.size {
+    width: 100%;
+    height: 50px;
+}
