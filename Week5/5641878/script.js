@@ -1,3 +1,4 @@
+// 블로그 계산기 코드에서 연산 과정 표시(연산자도 보임) 추가
 const buttons = document.querySelectorAll('button');
 const displayElement = document.querySelector('.input');
 
