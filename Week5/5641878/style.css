@@ -1,0 +1,73 @@
+:root {
+    --bg-color: rgb(184, 230, 250);
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#main {
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid gray;
+}
+
+.display {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#container {
+    width: 280px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 60px;
+    height: 90px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 255, 105);
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.clear {
+    background-color: rgb(255, 105, 105);
+}
+
+.result {
+    background-color: rgb(139, 139, 139);
+}
+
+.operator {
+    background-color: rgb(219, 219, 219);
+}
