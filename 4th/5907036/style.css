@@ -1,0 +1,149 @@
+#wrap {
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 215px;
+    margin: auto; /* header를 가운데 정렬  */
+    align-items: center;
+    justify-items: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 아이콘들을 수직 가운데 정렬  */
+    width: 100%;
+    padding: 0 100px; /* 양쪽에 여백 추가 */
+    box-sizing: border-box;
+}
+
+.left-icons, .right-icons {
+    display: flex;
+    gap: 20px;
+}
+
+#search {
+    width: 500px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid green;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#search input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 350px;
+}
+
+#nav {
+    width: 500px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item img{
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav-item p{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#left_contents_top img{
+    width: 38px;
+    height: 20px;
+}
+
+#left_contents_bottom img{
+    width: 180px;
+    height: 180px;
+}
+
+#left_top, #left_bottom {
+    width: 740px;
+    height: auto;
+    border: 2px solid rgb(245, 246, 350);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+#title1 {
+    margin-top: 15px;
+}
+
+#left_bottom, #left_top {
+    margin: 10px 0;
+}
+
+#left_contents_top {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-content: center;
+    justify-content: center;
+    justify-items: center; /* 자식 요소들을 수평 중앙 정렬 */
+    align-items: center; /* 자식 요소들을 수직 중앙 정렬 */
+}
+
+#left_contents_bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-content: center;
+        justify-content: center;
+        justify-items: center; /* 자식 요소들을 수평 중앙 정렬 */
+        align-items: center; /* 자식 요소들을 수직 중앙 정렬 */
+}
+
+#center {
+    width: 320px;
+    height: auto;
+    margin: 0 20px;
+}
+
+#rightmenu{
+    width: 296px;
+    height: auto;
+}
+
+#rightmenu {
+    background-color: rgb(245, 246, 350);
+    border: 1px solid rgb(245, 246, 350);
+    border-radius: 30px;
+}
+
+#rightmenu img{
+    margin-top: 10px;
+}
