@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* CSS 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    background-color: grey;
+
+    // scss 변수 : 폰트 굵기에 대한 변수 설정 
+    $fw-900 : 900;
+    $fw-700 : 700;
+    $fw-400 : 400;
+    // scss 변수 : 색깔에 대한 변수 설정
+    $color-900 : hsl(0, 0%, 100%);
+    $color-700 : hsl(0, 0%, 80%);
+    $color-400 : hsl(0, 0%, 60%);
+
+
+    .anmiated-text {
+        // clamp(최솟값, 선호값, 최대값) : 우선적으로는 선호값, 그러나 최소/최대값을 벗어나진 않음(범위 존재)
+        // 반응형 디자인 만들때 유용하게 사용할 수 있음. (rem은 16px로 고정값)
+        font-size: clamp(2rem, calc(2rem + 1.5vw), 8rem);
+
+        .letter {
+            font-weight: $fw-900;
+            // font-weight가 변할때 
+            transition: font-weight 0.2s ease;
+
+            &:hover {
+                font-weight: $fw-900;
+                color: $color-900;
+            }
+
+            // 호버 글씨의 오른쪽 영역
+            // 특정 .letter가 hover 되었을 때 오른쪽 .letter의 폰트와 색깔을 변경
+            &:hover+.letter {
+                font-weight: $fw-700;
+                color: $color-700;
+            }
+
+            &:hover+.letter+.letter {
+                font-weight: $fw-400;
+                color: $color-400;
+            }
+
+            // 호버 글씨의 왼쪽 영역
+            // 오른쪽 .letter가 hover상태일 경우 자신의 폰트와 색깔을 변경
+            &:has(+ .letter:hover) {
+                font-weight: $fw-700;
+                color: $color-700;
+            }
+
+            &:has(+ .letter + .letter:hover) {
+                font-weight: $fw-400;
+                color: $color-400;
+            }
+
+        }
+    }
+
+    .underline-text {
+        font-size: clamp(2rem, calc(2rem + 1.5vw), 8rem);
+        font-weight: $fw-900;
+        color: $color-900;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: black;
+        }
+
+        // 가상요소를 만들어서 굵기가 있는 선을 만든다.
+        // &::after{}와 &:hover::after {}의 left, right 값을 조절하면 밑줄의 시작 및 끝을 정할 수 있다.
+        &::after {
+            content: '';
+            position: absolute;
+            left: auto;
+            right: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: black;
+            transition: width 0.3s ease;
+        }
+
+        // hover 되었을 경우에만 width 설정을 통해 보임
+        &:hover::after {
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+    }
+}
