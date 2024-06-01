@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: grey;
+}
+body .anmiated-text {
+  font-size: clamp(2rem, 2rem + 1.5vw, 8rem);
+}
+body .anmiated-text .letter {
+  font-weight: 900;
+  transition: font-weight 0.2s ease;
+}
+body .anmiated-text .letter:hover {
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+}
+body .anmiated-text .letter:hover + .letter {
+  font-weight: 700;
+  color: hsl(0, 0%, 80%);
+}
+body .anmiated-text .letter:hover + .letter + .letter {
+  font-weight: 400;
+  color: hsl(0, 0%, 60%);
+}
+body .anmiated-text .letter:has(+ .letter:hover) {
+  font-weight: 700;
+  color: hsl(0, 0%, 80%);
+}
+body .anmiated-text .letter:has(+ .letter + .letter:hover) {
+  font-weight: 400;
+  color: hsl(0, 0%, 60%);
+}
+body .underline-text {
+  font-size: clamp(2rem, 2rem + 1.5vw, 8rem);
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+body .underline-text:hover {
+  color: black;
+}
+body .underline-text::after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: width 0.3s ease;
+}
+body .underline-text:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
