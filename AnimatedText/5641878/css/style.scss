@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    // 최소 높이가 100vh : 화면만큼 계속 최대로 차지
+    min-height: 100vh;
+    // grid layout : align-content & justify-content 함께 설정 : center에 배치 : 그리드 트랙 전체에 대한 배치 설정(place-items와의 차이점)
+    // place-items는 각 그리드 아이템에 대한 레이아웃 설정 
+    display: grid; place-content: center center; 
+    align-items: center; // 각 그리드 내의 아이템들의 세로 방향 배치 위치를 결정(items)
+    font-family: 'Poppins';
+    // hsl : 색상, 채도, 밝기(hue, saturation, lightness)에 대해 설정 : rgb와 다른 점
+    background-color: hsl(0, 0%, 11%);
+
+    .home {
+        p.animated-text {
+            // clamp(최솟값, 선호값, 최대값) : 우선적으로는 선호값, 그러나 최소/최대값을 벗어나진 않음(범위 존재)
+            // calc : 계산식 작성 가능
+            font-size: clamp(2rem, calc(2rem + 1.5vw) , 8rem);
+
+            & .letter {
+                // css 변수 설정 : scss변수 설정은 $로 사용하는 식
+                --_fw-900 : 900;
+                --_fw-700 : 700;
+                --_fw-400 : 400;
+                // hsl : 색상, 채도, 밝기(hue, saturation, lightness)에 대해 설정 : rgb와 다른 점
+                --_clr-900 : hsl(0,0%, 100%);
+                --_clr-700 : hsl(0,0%, 80%);
+                --_clr-400 : hsl(0,0%, 60%);
+                
+                font-weight: var(--_fw-900);
+                transition: font-weight 0.5s ease;
+
+
+                &:hover {
+                    font-weight: var(--_fw-900);
+                    color: var(--_clr-900);
+                }
+
+                // 호버 글씨의 오른쪽 영역
+                //////////////////////////////////////////////////////////////////////////////////////////////////////
+                // <인접 형제 요소> | hover된 경우 : letter들에서 오른쪽의 className이 letter인 "형제 태그"에 대해서
+                &:hover + .letter {
+                    font-weight: var(--_fw-700);
+                    color: var(--_clr-700);
+                }
+                // <두번째 형제 요소> | hover된 경우 : letter들에서 오른쪽의 className이 letter인 "형제 태그"의 그 다음 오른쪽 태그에 대해서
+                &:hover + .letter + .letter {
+                    font-weight: var(--_fw-400);
+                    color: var(--_clr-400);
+                }
+
+                // 호버 글씨의 왼쪽 영역
+                //////////////////////////////////////////////////////////////////////////////////////////////////////
+                // <호버 글자의 왼쪽 인접 형제 요소>
+                &:has(+ .letter:hover) {
+                    font-weight: var(--_fw-700);
+                    color: var(--_clr-700);
+                }
+                // <호버 글자의 왼쪽 두번째 형제 요소>
+                &:has(+ .letter + .letter:hover) {
+                    font-weight: var(--_fw-400);
+                    color: var(--_clr-400);
+                }
+            }
+        }
+    }
+}
