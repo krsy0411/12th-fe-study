@@ -13,9 +13,11 @@
     font-family: "Poppins";
     background-color: hsl(0, 0%, 11%);
   }
+
   body .home p.animated-text {
     font-size: clamp(2rem, 2rem + 1.5vw, 8rem);
   }
+
   body .home p.animated-text .letter {
     --_fw-900: 900;
     --_fw-700: 700;
@@ -26,6 +28,7 @@
     font-weight: var(--_fw-900);
     transition: font-weight 0.5s ease;
   }
+
   body .home p.animated-text .letter:hover {
     font-weight: var(--_fw-900);
     color: var(--_clr-900);
@@ -38,11 +41,13 @@
     font-weight: var(--_fw-400);
     color: var(--_clr-400);
   }
+
   body .home p.animated-text .letter:has(+ .letter:hover) {
     font-weight: var(--_fw-700);
     color: var(--_clr-700);
   }
+
   body .home p.animated-text .letter:has(+ .letter + .letter:hover) {
     font-weight: var(--_fw-400);
     color: var(--_clr-400);
-  }/*# sourceMappingURL=style.css.map */
+  }
