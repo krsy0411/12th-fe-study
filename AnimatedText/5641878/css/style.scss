@@ -11,7 +11,7 @@ body {
     place-content: center center; 
     align-items: center;
     font-family: 'Poppins';
-    background-color: hsl(0, 0%, 11%);
+    background-color: hsl(208, 93%, 40%);
 
     .home {
         p.animated-text {
@@ -21,9 +21,9 @@ body {
                 --_fw-900 : 900;
                 --_fw-700 : 700;
                 --_fw-400 : 400;
-                --_clr-900 : hsl(0,0%, 100%);
-                --_clr-700 : hsl(0,0%, 80%);
-                --_clr-400 : hsl(0,0%, 60%);
+                --_clr-900: hsl(208, 93%, 80%);
+                --_clr-700: hsl(208, 93%, 60%);
+                --_clr-400: hsl(208, 93%, 40%);
                 
                 font-weight: var(--_fw-900);
                 transition: font-weight 0.5s ease; // 0.5초 동안 크기 변화
