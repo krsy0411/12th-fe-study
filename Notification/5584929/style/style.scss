@@ -1,0 +1,84 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.notification-button {
+    all: initial;
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+
+
+.notification {
+    color: white;
+    position: absolute;
+    top: 90vh;
+    background-color: green;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    // 나타나는 애니메이션 적용
+    animation: fadeIn 0.5s ease forwards;
+
+    .notification__body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+
+        .notification__close__button {
+            cursor: pointer;
+        }
+    }
+}
+
+.hidden{
+    // 사라지는 애니메이션 적용
+    animation: fadeOut 0.5s ease forwards; 
+}
+
+// 사라지는 애니메이션
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+// 나타나는 애니메이션
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
