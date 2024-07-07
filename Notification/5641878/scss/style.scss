@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// css-rule to use google-font -> font-family: 'Roboto', sans-serif;
+:root {
+    --success: #327B32;
+    --text: #F2ECFF;
+    --background: #1F1F1F;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    // 박스들의 끝 스타일을 맞추기 위한 옵션
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    display: grid;
+    // align-items & justify-content 설정을 한 번에 하게 도와주는 property : only with grid or flex
+    place-items: center;
+    font-size: 16px;
+    height: 100vh;
+
+    .trigger-button {
+        background-color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        // 외부 윤곽선 제거
+        outline: none;
+        border: none;
+        // <html> tag의 폰트 크기를 기준으로 함 : rem
+        font-size: 0.8rem;
+        min-height: 40px;
+        max-width: 160px;
+        width: 100%;
+        font-weight: 600;
+        transition: all 0.25s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .notification {
+        // body를 기준으로
+        position: absolute;
+        bottom: 16px;
+
+        // 세로 가로
+        padding: 0 8px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        background-color: var(--success);
+        color: var(--text);
+        // x y blur color
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+        // 처음엔 안 보이도록 설정
+        opacity: 0;
+        animation: fadeInAnimation ease-in-out 0.25s forwards;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+        .notification__body {
+            // 가로롤 펼치기
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            // 폰트 사이즈를 viewport에 따라 동적으로 결정하도록 만듦 : min - val - max : 실제로 사용하는 폰트사이즈는 가로길이의 3%
+            // 하지만 최소크기는 0.8rem, 최대크기는 1.2rem
+            font-size: clamp(0.8rem, 3vw, 1.2rem);
+
+            // 가장 마지막 svg요소를 선택
+            &>svg:nth-last-child(1) {
+                cursor: pointer;
+                margin: auto;
+                min-width: 24px;
+                min-height: 24px;
+            }
+
+            .notification__body__first {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 8px;
+
+                &>svg {
+                    height: 24px;
+                    width: 24px;
+                    min-width: 24px;
+                    min-height: 24px;
+                    fill: var(--text);
+                }
+            }
+        }
+    }
+
+    .hide {
+        // layout에는 여전히 영향을 주지만, 보이지는 않음
+        visibility: hidden;
+        animation: fadeOutAnimation ease-in-out 0.25s forwards;
+    }
+
+    .none {
+        // layout상에서도 제거되고, 보이지도 않음
+        display: none;
+    }
+}
+
+// 나타날때의 애니메이션
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        min-height: 40px;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        min-height: 60px;
+        visibility: visible;
+    }
+}
+
+// 사라질때의 애니메이션
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+        min-height: 60px;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        min-height: 40px;
+        visibility: hidden;
+    }
+}
+
+@keyframes process {
+    to {
+        transform: scaleX(1);
+    }
+}
